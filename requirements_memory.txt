@@ -1,0 +1,11 @@
+# Memory System Dependencies
+
+- sqlalchemy
+- pymilvus
+- langchain
+
+# Database Drivers
+Include any required database driver here, for example:
+- psycopg2 (PostgreSQL)
+- mysql-connector-python (MySQL)
+- sqlite3  (SQLite)  
