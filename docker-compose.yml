@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: finance_gpt
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+
+  milvus:
+    image: milvusdb/milvus:latest
+    restart: always
+    environment:
+      MILVUS_DB: milvus_db
+    volumes:
+      - milvus_data:/var/lib/milvus
+    ports:
+      - '19530:19530'
+
+volumes:
+  postgres_data:
+  milvus_data:
