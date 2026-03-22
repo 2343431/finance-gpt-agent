@@ -1,0 +1,5 @@
+langchain
+sqlalchemy
+pymilvus
+sentence-transformers
+# Add any other required packages here
